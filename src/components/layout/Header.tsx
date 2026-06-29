@@ -9,7 +9,7 @@ export function Header() {
         aria-label="Principal"
         className="mx-auto flex max-w-[1180px] items-center gap-[18px] px-6 py-3.5"
       >
-        <a href="#inicio" className="rounded-md" aria-label="Leonardo Buleje — inicio">
+        <a href="#inicio" className="rounded-md" aria-label="Leonardo Buleje - inicio">
           <Brand />
         </a>
 

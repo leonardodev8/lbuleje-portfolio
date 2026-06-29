@@ -10,7 +10,11 @@
   --color-text: #edecf2;
   --color-muted: #9b9ba7;
   --color-muted2: #8b8b97;
-  --color-cyan: #22d3ee;
+  --color-emerald: #34d399;
+  --color-lime: #E4EF56;
+  --color-redbright: #f43f5e;
+
+  --color-red-soft: rgba(225, 29, 72, 0.14);
 
   --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-sans: "Geist", system-ui, -apple-system, sans-serif;

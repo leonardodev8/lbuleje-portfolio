@@ -15,7 +15,7 @@ export const profile = {
   },
   summary: {
     es: "Construyo productos móviles end-to-end, definición de producto, arquitectura, código y despliegue en producción. Módulos nativos, AR y procesamiento de IA en dispositivo incluidos.",
-    en: "I build mobile products end-to-end — product definition, architecture, code and production deployment. Native modules, AR and on-device AI included.",
+    en: "I build mobile products end-to-end, product definition, architecture, code and production deployment. Native modules, AR and on-device AI included.",
   },
   footerTagline: {
     es: "Desarrollador Mobile - React Native + Expo - Perú",
