@@ -19,10 +19,12 @@ backend; all the content lives in the frontend as typed data.
 
 - `src/main.tsx` is the entry point. It mounts the app and wraps it with
   `LanguageProvider`, so every component can read the current language.
+- `src/App.tsx` composes the page: `Header` → `Hero` → `Projects` → `Footer`.
 - The language system (i18n) supports `es` (default) and `en`. The chosen language is
   saved in `localStorage`.
-- The content (profile, stats, navigation) is kept in `src/data` as typed objects, so the
-  text is separate from the components.
+- The content (profile, stats, navigation, and projects) is kept in `src/data` as typed
+  objects, so the text is separate from the components. All copy is bilingual via the
+  `Localized` type (`{ es, en }`).
 - Shared helpers and hooks live in `src/lib` and `src/hooks`.
 
 ## Project Structure
@@ -36,13 +38,13 @@ lbuleje-portfolio/
 │   ├── index.css           # Tailwind import, design tokens, base styles
 │   ├── components/
 │   │   ├── layout/         # Header, Footer, Brand
-│   │   ├── sections/       # Page sections (e.g. hero)
-│   │   └── ui/             # Reusable UI (Button, LanguageToggle, Reveal)
-│   ├── data/               # Static content (profile, navigation)
+│   │   ├── sections/       # Page sections (hero, projects)
+│   │   └── ui/             # Reusable UI (Button, Badge, Section, SectionHeading, LanguageToggle, Reveal)
+│   ├── data/               # Static content (profile, navigation, projects)
 │   ├── hooks/              # Custom React hooks
 │   ├── i18n/               # Language context, provider, and helpers
 │   ├── lib/                # Small utilities (cn, tone)
-│   └── types/              # Shared TypeScript types
+│   └── types/              # Shared TypeScript types (Project, Stat, Tone)
 ├── vite.config.ts          # Vite + React + Tailwind plugins
 ├── eslint.config.js        # ESLint rules
 └── tsconfig*.json          # TypeScript config
