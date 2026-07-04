@@ -7,6 +7,7 @@ import { bulletColor } from "../../../lib/tone";
 import type { Project } from "../../../types";
 import { Badge } from "../../ui/Badge";
 import { Reveal } from "../../ui/Reveal";
+import { TechChip } from "../../ui/TechChip";
 
 interface ProjectCardProps {
   project: Project;
@@ -30,8 +31,19 @@ export const ProjectCard = memo(function ProjectCard({ project }: ProjectCardPro
             : "min-[881px]:grid-cols-[1fr_340px]",
         )}
       >
-        <div className={cn(mediaLeft ? "" : "min-[881px]:order-2")}>
-          {/* TODO: agregar media */}
+        <div
+          className={cn(
+            "relative aspect-[16/10] overflow-hidden bg-panel2 min-[881px]:aspect-auto",
+            mediaLeft ? "" : "min-[881px]:order-2",
+          )}
+        >
+          <img
+            src={project.media.src}
+            alt={t(project.media.alt)}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          />
         </div>
 
         <div
@@ -63,9 +75,7 @@ export const ProjectCard = memo(function ProjectCard({ project }: ProjectCardPro
           <ul className="flex flex-wrap gap-2">
             {project.tech.map((tech) => (
               <li key={tech}>
-                <span className="rounded-[7px] border border-border px-[10px] py-[5px] font-mono text-[11.5px] text-muted">
-                  {tech}
-                </span>
+                <TechChip>{tech}</TechChip>
               </li>
             ))}
           </ul>

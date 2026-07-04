@@ -1,3 +1,6 @@
+import ciamoMockup from "../assets/projects/ciamo-mockup.webp";
+import colectyredMockup from "../assets/projects/colectyred-mockup.webp";
+import campoSanidadMockup from "../assets/projects/gestion-campo-mockup.webp";
 import type { Project } from "../types";
 
 export const projectsCopy = {
@@ -17,7 +20,13 @@ export const projects: Project[] = [
     category: { es: "Movilidad en Tiempo real", en: "Mobility in Real-time" },
     tone: "redbright",
     mediaSide: "left",
-    // media: ,
+    media: {
+      src: colectyredMockup,
+      alt: {
+        es: "Mockup de la app Colectyred",
+        en: "Colectyred app mockup",
+      },
+    },
     description: {
       es: "App dual sincronizada para transporte colectivo: app pasajero (reserva de asientos, pagos in-app, rutas con mapas) + app conductor (gestión de rutas, tracking de ubicación en background).",
       en: "Synchronized dual-app for collective transport: passenger app (seat booking, in-app payments, routes with maps) + driver app (route management, background location tracking).",
@@ -76,7 +85,13 @@ export const projects: Project[] = [
     category: { es: "Bienestar AR + IA", en: "Well-being AR + AI" },
     tone: "lime",
     mediaSide: "right",
-    // media: ,
+    media: {
+      src: ciamoMockup,
+      alt: {
+        es: "Mockup de la app CIAMO Postures",
+        en: "CIAMO Postures app mockup",
+      },
+    },
     description: {
       es: "App de bienestar emocional: detección postural con Realidad Aumentada y clasificación de emociones con IA en dispositivo, sobre una arquitectura modular limpia.",
       en: "Emotional well-being app: postural detection with Augmented Reality and on-device AI emotion classification, on a clean modular architecture.",
@@ -126,7 +141,13 @@ export const projects: Project[] = [
     category: { es: "Agroexportación | Nativo", en: "Agro-export | Native" },
     tone: "emerald",
     mediaSide: "left",
-    // media: ,
+    media: {
+      src: campoSanidadMockup,
+      alt: {
+        es: "Mockup de la app Gestión Campo Sanidad",
+        en: "Field Health Management app mockup",
+      },
+    },
     description: {
       es: "Proyecto end-to-end (mobile + backend + integración empresarial): digitalización del flujo de órdenes de agroquímicos y fertilizantes desde campo hasta planta/oficina.",
       en: "End-to-end project (mobile + backend + enterprise integration): digitizing the agrochemical and fertilizer order flow from field to plant/office.",

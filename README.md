@@ -34,17 +34,18 @@ lbuleje-portfolio/
 ├── index.html              # HTML entry, meta tags, and fonts
 ├── src/
 │   ├── main.tsx            # App entry point (mounts React + providers)
-│   ├── App.tsx             # Page layout: Header + Hero + Footer
+│   ├── App.tsx             # Page layout: Header + Hero + Projects + Stack + Footer
 │   ├── index.css           # Tailwind import, design tokens, base styles
+│   ├── assets/
+│   │   └── projects/       # Project mockup images (.webp)
 │   ├── components/
 │   │   ├── layout/         # Header, Footer, Brand
-│   │   ├── sections/       # Page sections (hero, projects)
-│   │   └── ui/             # Reusable UI (Button, Badge, Section, SectionHeading, LanguageToggle, Reveal)
-│   ├── data/               # Static content (profile, navigation, projects)
-│   ├── hooks/              # Custom React hooks
-│   ├── i18n/               # Language context, provider, and helpers
+│   │   ├── sections/       # Page sections (hero, projects, stack)
+│   │   └── ui/             # Reusable UI (Button, Badge, TechChip, Section, SectionHeading, LanguageToggle, Reveal)
+│   ├── data/               # Static content (profile, projects, stack)
+│   ├── i18n/               # Language context, provider, locale routing, and SEO head helpers
 │   ├── lib/                # Small utilities (cn, tone)
-│   └── types/              # Shared TypeScript types (Project, Stat, Tone)
+│   └── types/              # Shared TypeScript types (Project, ProjectMedia, Stat, Tone, StackCategory)
 ├── vite.config.ts          # Vite + React + Tailwind plugins
 ├── eslint.config.js        # ESLint rules
 └── tsconfig*.json          # TypeScript config

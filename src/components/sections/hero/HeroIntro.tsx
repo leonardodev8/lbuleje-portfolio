@@ -11,9 +11,6 @@ export function HeroIntro() {
   return (
     <div className="flex flex-col gap-[22px]">
       <Reveal delay={60}>
-        <p className="font-mono text-[12.5px] uppercase tracking-[2px] text-muted2">
-          {t(profile.eyebrow)}
-        </p>
         <h1 className="mt-2.5 font-display text-[clamp(44px,6vw,82px)] font-bold leading-none tracking-[-0.03em] text-text">
           Leonardo
           <br />

@@ -5,10 +5,6 @@ export const CV_URL = "#"; // TODO: subir cv
 export const profile = {
   name: "Leonardo Buleje",
   initials: "LB",
-  eyebrow: {
-    es: "Desarrollador Mobile: React Native + Expo",
-    en: "Mobile Developer: React Native + Expo",
-  },
   role: {
     es: "Desarrollador Mobile | Arquitecto Frontend",
     en: "Mobile Developer | Frontend Architect",
@@ -32,7 +28,7 @@ export const heroCopy = {
 export const heroStats: Stat[] = [
   { value: "+8", label: { es: "años exp.", en: "years exp." } },
   { value: "+4", label: { es: "React Native", en: "React Native" } },
-  { value: "4", label: { es: "apps en stores", en: "apps shipped" } },
+  { value: "8", label: { es: "apps en stores", en: "apps shipped" } },
 ];
 
 // Tecnologías que orbitan el dispositivo en el showcase 3D del hero
