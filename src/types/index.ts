@@ -15,7 +15,7 @@ export interface ProjectLink {
 }
 
 // Tono de acento usado en badges y viñetas
-export type Tone = "emerald" | "lime" | "redbright" | "muted";
+export type Tone = "emerald" | "lime" | "redbright" | "accent" | "cyan" | "muted";
 
 // Mockup del proyecto: src resuelto por Vite + alt localizado
 export interface ProjectMedia {
@@ -49,4 +49,42 @@ export interface StackCategory {
   id: string;
   title: Localized;
   items: StackItem[];
+}
+
+// Entrada de la línea de tiempo profesional
+export interface ExperienceItem {
+  id: string;
+  period: Localized;
+  role: Localized;
+  company: Localized;
+  bullets: Localized[];
+  tone: Tone;
+  // Marca el puesto actual (nodo resaltado)
+  current?: boolean;
+}
+
+export interface EducationItem {
+  degree: Localized;
+  institution: string;
+  period: string;
+}
+
+// Reconocimiento (sidebar de experiencia)
+export interface Honor {
+  title: Localized;
+  description: Localized;
+  period: string;
+  // Enlace externo opcional; convierte el título en link (nueva pestaña)
+  href?: string;
+}
+
+export interface Certification {
+  text: Localized;
+}
+
+export interface LanguageSkill {
+  name: Localized;
+  level: Localized;
+  // Nivel 0 al 100 para la barra de progreso
+  value: number;
 }

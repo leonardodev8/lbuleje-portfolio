@@ -1,3 +1,4 @@
+import heroScreenshot from "../../../assets/hero/hero-screenshot.webp";
 import { heroCopy, orbitTech } from "../../../data/profile";
 import { useLanguage } from "../../../i18n/useLanguage";
 import { Reveal } from "../../ui/Reveal";
@@ -17,7 +18,7 @@ function PhoneDevice({ caption }: { caption: string }) {
       <div className="relative flex h-full w-full flex-col overflow-hidden rounded-[32px] bg-gradient-to-b from-[#0e0e16] to-[#0a0a10]">
         <div className="absolute left-1/2 top-3 z-[3] h-6 w-24 -translate-x-1/2 rounded-[14px] bg-black" />
         <img
-          src="/section/hero-screenshot.webp"
+          src={heroScreenshot}
           alt={caption}
           loading="lazy"
           decoding="async"

@@ -19,7 +19,7 @@ backend; all the content lives in the frontend as typed data.
 
 - `src/main.tsx` is the entry point. It mounts the app and wraps it with
   `LanguageProvider`, so every component can read the current language.
-- `src/App.tsx` composes the page: `Header` → `Hero` → `Projects` → `Footer`.
+- `src/App.tsx` composes the page: `Header` → `Hero` → `Projects` → `Stack` → `Experience` → `Footer`.
 - The language system (i18n) supports `es` (default) and `en`. The chosen language is
   saved in `localStorage`.
 - The content (profile, stats, navigation, and projects) is kept in `src/data` as typed
@@ -32,20 +32,22 @@ backend; all the content lives in the frontend as typed data.
 ```
 lbuleje-portfolio/
 ├── index.html              # HTML entry, meta tags, and fonts
+├── public/                 # Static assets served as-is (favicon)
 ├── src/
 │   ├── main.tsx            # App entry point (mounts React + providers)
-│   ├── App.tsx             # Page layout: Header + Hero + Projects + Stack + Footer
+│   ├── App.tsx             # Page layout: Header + Hero + Projects + Stack + Experience + Footer
 │   ├── index.css           # Tailwind import, design tokens, base styles
 │   ├── assets/
+│   │   ├── hero/           # Hero screenshot (.webp)
 │   │   └── projects/       # Project mockup images (.webp)
 │   ├── components/
 │   │   ├── layout/         # Header, Footer, Brand
-│   │   ├── sections/       # Page sections (hero, projects, stack)
+│   │   ├── sections/       # Page sections (hero, projects, stack, experience)
 │   │   └── ui/             # Reusable UI (Button, Badge, TechChip, Section, SectionHeading, LanguageToggle, Reveal)
-│   ├── data/               # Static content (profile, projects, stack)
+│   ├── data/               # Static content (profile, projects, stack, experience)
 │   ├── i18n/               # Language context, provider, locale routing, and SEO head helpers
 │   ├── lib/                # Small utilities (cn, tone)
-│   └── types/              # Shared TypeScript types (Project, ProjectMedia, Stat, Tone, StackCategory)
+│   └── types/              # Shared TypeScript types (Project, Stat, Tone, StackCategory, ExperienceItem, EducationItem, Honor...)
 ├── vite.config.ts          # Vite + React + Tailwind plugins
 ├── eslint.config.js        # ESLint rules
 └── tsconfig*.json          # TypeScript config
