@@ -1,6 +1,7 @@
-import type { Stat } from "../types";
+import type { ContactChannel, Stat } from "../types";
 
 export const CV_URL = "#"; // TODO: subir cv
+export const EMAIL = "lbulejedev@gmail.com";
 
 export const profile = {
   name: "Leonardo Buleje",
@@ -39,4 +40,15 @@ export const orbitTech: string[] = [
   "Socket.IO",
   "ViroReact",
   "Reanimated",
+];
+
+export const contactChannels: ContactChannel[] = [
+  { label: EMAIL, href: `mailto:${EMAIL}` },
+  { label: "+51 931 012 521", href: "tel:+51931012521" },
+  { label: "github.com/leonardodev8", href: "https://github.com/leonardodev8", external: true },
+  {
+    label: "in/leonardo-buleje",
+    href: "https://linkedin.com/in/leonardo-buleje-791003203",
+    external: true,
+  },
 ];

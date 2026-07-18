@@ -1,5 +1,6 @@
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
+import { Contact } from "./components/sections/contact/Contact";
 import { Experience } from "./components/sections/experience/Experience";
 import { Hero } from "./components/sections/hero/Hero";
 import { Projects } from "./components/sections/projects/Projects";
@@ -14,6 +15,7 @@ function App() {
         <Projects />
         <Stack />
         <Experience />
+        <Contact />
       </main>
       <Footer />
     </>

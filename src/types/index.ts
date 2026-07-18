@@ -88,3 +88,10 @@ export interface LanguageSkill {
   // Nivel 0 al 100 para la barra de progreso
   value: number;
 }
+
+// Datos de contacto en CTA final
+export interface ContactChannel {
+  label: string;
+  href: string;
+  external?: boolean;
+}
