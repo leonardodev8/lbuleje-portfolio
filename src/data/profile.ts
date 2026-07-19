@@ -7,8 +7,8 @@ export const profile = {
   name: "Leonardo Buleje",
   initials: "LB",
   role: {
-    es: "Desarrollador Mobile | Arquitecto Frontend",
-    en: "Mobile Developer | Frontend Architect",
+    es: "Desarrollador Mobile React Native | Android (Kotlin)",
+    en: "Mobile Developer React Native | Android (Kotlin)",
   },
   summary: {
     es: "Construyo productos móviles end-to-end, definición de producto, arquitectura, código y despliegue en producción. Módulos nativos, AR y procesamiento de IA en dispositivo incluidos.",
