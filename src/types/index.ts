@@ -95,3 +95,8 @@ export interface ContactChannel {
   href: string;
   external?: boolean;
 }
+
+export interface NavLink {
+  href: string;
+  label: Localized;
+}
